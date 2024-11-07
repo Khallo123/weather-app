@@ -19,7 +19,7 @@ body{
     border-radius: 3px;
     margin: auto;
     margin-top: 16px;
-    height: 100vh;
+    height: 150vh;
 }
 
 .prt1{
@@ -165,4 +165,122 @@ body{
     margin-right: 10px;
 }
 
+.boxS{
+    display: flex;
+    background-color: rgb(239, 238, 238);
+    height: 50vh;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.boxOne{
+    width: 180px;
+    height: 160px;
+    margin-right: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Hone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.boxTwo{
+    width: 180px;
+    height: 160px;
+    margin-right: 20px;
+    margin-left: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Hone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.boxtHree{
+    width: 180px;
+    height: 160px;
+    margin-right: 20px;
+    margin-left: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Hone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.boxFour{
+    width: 180px;
+    height: 160px;
+    margin-right: 20px;
+    margin-left: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Hone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.descRiption{
+    width: 90%;
+    height: 60vh;
+    padding-top: 4rem;
+}
+
+.DesHead{
+    margin-left: 14rem;
+    font-size: 30px;
+}
+.subhead{
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
+.DesPtag{
+    margin-left: 11rem;
+    margin-top: 2rem;
+    font-size: 23px;
+}
+.subpara{
+    margin-left: 9rem;
+    margin-top: 1rem;
+}
+
+.boxsesTwo{
+    width: 98%;
+    height: 80vh;
+    background: rgb(236, 233, 233);
+    margin: auto;
+}
+
+.subheadt{
+    margin-left: 16rem;
+}
+
+.DesPtagt{
+    margin-left: 16rem;
+    margin-top: 2rem;
+    font-size: 22px;
+}
+.subparat{
+    margin-left: 15rem;
+}
