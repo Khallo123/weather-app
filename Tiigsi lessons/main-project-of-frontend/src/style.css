@@ -270,6 +270,7 @@ body{
     height: 80vh;
     background: rgb(236, 233, 233);
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .subheadt{
@@ -277,10 +278,226 @@ body{
 }
 
 .DesPtagt{
-    margin-left: 16rem;
+    margin-left: 14rem;
     margin-top: 2rem;
-    font-size: 22px;
+    font-size: 24px;
 }
 .subparat{
-    margin-left: 15rem;
+    margin-left: 10rem;
+}
+
+.buttonsVedi0{
+    display: flex;
+}
+
+.butns{
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.btnoNe{
+    background: rgb(20, 185, 185);
+    padding-left: 0.5rem;
+    padding-right: 2rem;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    transition: all .5s ease;
+    margin-bottom: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btnoNe:hover{
+    background-color: rgb(28, 216, 216);
+}
+
+.pIcon{
+    color: white;
+    margin-left: 7px;
+}
+
+.iconOne{
+    width: 25px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7px;
+}
+
+.btntWo{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 2.6rem;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .5s ease;
+}
+
+.btntWo:hover{
+    background-color: rgb(197, 193, 193);
+}
+
+.Picon{
+    color: black;
+    margin-left: 7px;
+}
+
+.iconTwo{
+    width: 25px;
+    padding: 3px;
+    margin-left: 8px;
+}
+
+.btntHree{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.6rem;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .5s ease;
+}
+
+.btntHree:hover{
+    background-color: rgb(197, 193, 193);
+}
+
+.Picon{
+    color: black;
+    margin-left: 7px;
+}
+
+.icontHree{
+    width: 25px;
+    padding: 3px;
+    margin-left: 8px;
+}
+
+.btnfOur{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 2.3rem;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .5s ease;
+}
+
+.btnfOur:hover{
+    background-color: rgb(197, 193, 193);
+}
+
+.Picon{
+    color: black;
+    margin-left: 7px;
+}
+
+.iconFour{
+    width: 25px;
+    padding: 3px;
+    margin-left: 8px;
+}
+
+.btnfIve{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 3.1rem;
+    padding-top: 7px;
+    padding-bottom: 6px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .5s ease;
+}
+
+.btnfIve:hover{
+    background-color: rgb(197, 193, 193);
+}
+
+.Picon{
+    color: black;
+    margin-left: 7px;
+}
+
+.iconfIve{
+    width: 25px;
+    padding: 3px;
+    margin-left: 8px;
+}
+
+.buildDive{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    background-color: white;
+}
+
+.textDiv{
+    margin-left: 2rem;
+}
+
+.HelementOne{
+    font-size: 60px;
+    margin-left: 16rem;
+}
+.HelementTwo{
+    font-size: 65px;
+    margin-left: 14.5rem;
+}
+
+.PelemenytOne{
+    font-size: 21px;
+    margin-left: 10rem;
+    color: rgb(94, 94, 94);
+}
+
+.PelenentTwo{
+    font-size: 21px;
+    margin-left: 19rem;
+    color: rgb(94, 94, 94);
+}
+
+.darkDiv{
+    width: 99%;
+    height: 100vh;
+    background-color: #000000;
+    padding-top: 4rem;
+}
+
+
+
+.headElementone{
+    font-size: 60px;
+    color: white;
+    margin-left: 16rem;
+}
+
+.headElementTwo{
+    font-size: 50px;
+    color: white;
+    margin-left: 24rem;
 }
