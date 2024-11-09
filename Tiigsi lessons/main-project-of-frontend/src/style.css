@@ -12,14 +12,13 @@ body{
 }
 
 
-
 .container{
     width: 98%;
     border: 0.3px black solid;
     border-radius: 3px;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 16px;
-    height: 150vh;
+    height: fit-content;
 }
 
 .prt1{
@@ -53,6 +52,24 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
+.partTwo {
+    position: relative;
+    height: 45rem;
+}
+
+.main-img {
+    height: 100%;
+    transform: scale(0.93);
+}
+
+.mockup {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .btn{
     display: flex;
     align-items: center;
@@ -119,6 +136,13 @@ body{
 }
 
     /* HeroSection */
+
+.hero-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 5rem;
+}
 
 .headHO{
     margin-top: 100px;
@@ -241,22 +265,42 @@ body{
 }
 
 .descRiption{
-    width: 90%;
-    height: 60vh;
+    width: 100%;
     padding-top: 4rem;
 }
 
+.section-title {
+    text-align: center;
+}
+
 .DesHead{
-    margin-left: 14rem;
     font-size: 30px;
 }
 .subhead{
-    margin-left: 6rem;
     margin-top: 1rem;
 }
 
+.images-container {
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    transform: translateX(-10rem);
+}
+
+.images img {
+    height: 25rem;
+}
+
+.images img:nth-child(1), .images img:nth-child(3) {
+    opacity: .3;
+}
+
 .DesPtag{
-    margin-left: 11rem;
     margin-top: 2rem;
     font-size: 23px;
 }
@@ -266,11 +310,10 @@ body{
 }
 
 .boxsesTwo{
-    width: 98%;
-    height: 80vh;
+    width: 100%;
     background: rgb(236, 233, 233);
-    margin: auto;
-    margin-bottom: 50px;
+    margin-block: 5rem;
+    padding-block: 4rem;
 }
 
 .subheadt{
@@ -288,6 +331,42 @@ body{
 
 .buttonsVedi0{
     display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 30px;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    width: 70%;
+}
+
+.video {
+    position: relative;
+}
+
+.video .top-part img {
+    width: 100%;
+}
+
+.video .bottom-part {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.video-duration {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 1000px;
 }
 
 .butns{
@@ -450,45 +529,63 @@ body{
 }
 
 .buildDive{
-    width: 90%;
-    height: 100vh;
-    margin: auto;
+    width: 100%;
+    margin: 5rem auto;
     background-color: white;
+    padding-block: 5rem;
 }
 
-.textDiv{
-    margin-left: 2rem;
+.profileDIve {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
 }
 
-.HelementOne{
-    font-size: 60px;
-    margin-left: 16rem;
-}
-.HelementTwo{
-    font-size: 65px;
-    margin-left: 14.5rem;
+.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
 
-.PelemenytOne{
-    font-size: 21px;
-    margin-left: 10rem;
-    color: rgb(94, 94, 94);
+.number {
+    background-color: #4fd1c5;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    width: fit-content;
 }
 
-.PelenentTwo{
-    font-size: 21px;
-    margin-left: 19rem;
-    color: rgb(94, 94, 94);
+.iphone {
+    position: relative;
+    height: 30rem;
+}
+
+.iphone img {
+    width: 100%;
+    height: 100%;
+}
+
+.iphone img:nth-child(1) {
+    transform: scale(0.93);
+}
+
+.iphone img:nth-child(2) {
+    position: absolute;
+    inset: 0;
 }
 
 .darkDiv{
-    width: 99%;
-    height: 100vh;
+    width: 100%;
     background-color: #000000;
-    padding-top: 4rem;
+    padding: 4rem 0;
 }
 
-
+.choose{
+    display: flex;
+    align-items: first baseline;
+}
 
 .headElementone{
     font-size: 60px;
@@ -500,4 +597,264 @@ body{
     font-size: 50px;
     color: white;
     margin-left: 24rem;
+}
+
+.todoSection{
+    display: flex;
+}
+
+.hThree{
+    color: white;
+    padding-left: 3.3rem;
+    margin-bottom: 12px;
+}
+
+.Pelements{
+    color: rgb(197, 193, 193);
+}
+
+.boxeses{
+    display: flex;
+}
+.boxOnE{
+    width: 260px;
+    height: 380px;
+    background-color: white;
+    margin-left: 8rem;
+    padding: 2rem;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theYEar{
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+
+.hfive{
+    background-color: aqua;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 100px;
+    transition: all .6s ease;
+}
+.hfive:hover{
+    background: rgb(170, 255, 227);
+}
+
+.hfives{
+    color: rgb(56, 110, 92);
+}
+
+.htwo{
+    display: flex;
+    align-items: end;
+    padding-bottom: 12px;
+}
+
+.htwos{
+    font-size: 45px;
+    padding-right: 2px;
+}
+span{
+    font-size: 30px;
+    color: rgb(130, 128, 128);
+}
+
+.billed{
+    font-size: 25px;
+    color: rgb(130, 128, 128);
+}
+
+.lorem{
+    font-size: 17px;
+    margin-bottom: 30%;
+}
+
+.gobtn{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 200px;
+    margin-top: 45%;
+    color: white;
+    background-color: rgb(20, 185, 185);
+    border: none;
+    border-radius: 3px;
+    transition: all ease .6s;
+}
+.gobtn:hover{
+    background-color: rgb(28, 216, 216);
+}
+
+
+
+.boxtwo{
+    width: 260px;
+    height: 380px;
+    background-color: white;
+    margin-left: 1rem;
+    padding: 2rem;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theYEar{
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+
+
+.htwo{
+    display: flex;
+    align-items: end;
+    padding-bottom: 12px;
+}
+
+.htwos{
+    font-size: 45px;
+    padding-right: 2px;
+}
+span{
+    font-size: 30px;
+    color: rgb(130, 128, 128);
+}
+
+.billed{
+    font-size: 25px;
+    color: rgb(130, 128, 128);
+}
+
+.lorem{
+    font-size: 17px;
+    margin-bottom: 30%;
+}
+
+.gobtnt{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 200px;
+    margin-top: 45%;
+    color: white;
+    background-color: rgb(152, 79, 197);
+    border: none;
+    border-radius: 3px;
+    transition: all ease .6s;
+}
+.gobtnt:hover{
+    background-color: rgb(194, 125, 237);
+}
+
+.boxthreE{
+    width: 260px;
+    height: 380px;
+    background-color: white;
+    margin-left: 1rem;
+    padding: 2rem;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theYEar{
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+
+
+.htwo{
+    display: flex;
+    align-items: end;
+    padding-bottom: 12px;
+}
+
+.htwos{
+    font-size: 45px;
+    padding-right: 2px;
+}
+span{
+    font-size: 30px;
+    color: rgb(130, 128, 128);
+}
+
+.billed{
+    font-size: 25px;
+    color: rgb(130, 128, 128);
+}
+
+.lorem{
+    font-size: 17px;
+    margin-bottom: 30%;
+}
+
+.gobtnt{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 200px;
+    margin-top: 45%;
+    color: white;
+    background-color: rgb(152, 79, 197);
+    border: none;
+    border-radius: 3px;
+    transition: all ease .6s;
+}
+.gobtnt:hover{
+    background-color: rgb(194, 125, 237);
+}
+
+.commentSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.parTOne{
+  align-items: center;
+  width: 50%;
+}
+
+.commentOne, img{
+    border-radius: 100%;
+    width: 50px;
+    margin: auto;
+}
+
+blockquote{
+    font-size: 1.5rem;
+    color: rgb(117, 116, 116);
+}
+
+.social, .sight{
+    font-size: 20px;
+}
+
+.atag{
+    text-decoration: none;
+    color: rgb(79 209 197);
+}
+
+
+.parTwo{
+    width: 50%;
 }
