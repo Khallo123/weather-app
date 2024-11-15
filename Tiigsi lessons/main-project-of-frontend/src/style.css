@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
@@ -8,27 +8,26 @@
 
 body{
     background: white;
+    font-family: 'Montserrat', sans-serif;
     transition: 0.5s;
 }
 
 
 .container{
     width: 98%;
-    border: 0.3px black solid;
-    border-radius: 3px;
     margin: 0 auto;
     margin-top: 16px;
     height: fit-content;
 }
-
-.prt1{
+/* General styles for .prt1, .logoContainer, .links, .header, and .partTwo */
+.prt1 {
     display: flex;
     align-items: center;
     margin-left: 50px;
     margin-top: 5px;
 }
 
-.logoContainer{
+.logoContainer {
     margin-right: 20px;
     width: 28px;
     height: 28px;
@@ -36,18 +35,18 @@ body{
     border-radius: 50%;
 }
 
-.links{
+.links {
     text-decoration: none;
     color: grey;
     margin-right: 12px;
     font-size: large;
 }
 
-.links:hover{
+.links:hover {
     color: black;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,6 +55,32 @@ body{
 .partTwo {
     position: relative;
     height: 45rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .prt1 {
+        margin-left: 30px;
+    }
+
+    .logoContainer {
+        width: 24px;
+        height: 24px;
+        margin-right: 15px;
+    }
+
+    .links {
+        font-size: 1.2rem; /* Adjust font size for tablets */
+    }
+
+    .header {
+        flex-direction: column; /* Stack header items on tablet */
+        align-items: flex-start;
+    }
+
+    .partTwo {
+        height: auto; /* Make height auto on tablets */
+    }
 }
 
 .main-img {
@@ -139,6 +164,7 @@ body{
 
 .hero-main {
     display: flex;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
     padding-block: 5rem;
@@ -191,16 +217,25 @@ body{
 
 .boxS{
     display: flex;
+    flex-direction: row;
+    gap: 20px;
     background-color: rgb(239, 238, 238);
     height: 50vh;
     align-items: center;
     justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
 }
-
+.box-part1{
+    display: flex;
+    justify-content: space-around;
+}
+.box-part2{
+    display: flex;
+}
 .boxOne{
     width: 180px;
     height: 160px;
-    margin-right: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 30px;
     background-color: rgb(255, 255, 255);
@@ -216,7 +251,6 @@ body{
 .boxTwo{
     width: 180px;
     height: 160px;
-    margin-right: 20px;
     margin-left: 50px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 30px;
@@ -233,7 +267,6 @@ body{
 .boxtHree{
     width: 180px;
     height: 160px;
-    margin-right: 20px;
     margin-left: 50px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 30px;
@@ -250,7 +283,6 @@ body{
 .boxFour{
     width: 180px;
     height: 160px;
-    margin-right: 20px;
     margin-left: 50px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 30px;
@@ -582,21 +614,29 @@ body{
     padding: 4rem 0;
 }
 
+.handpDiv{
+    display: flex;
+    flex-direction: column;
+}
 .choose{
     display: flex;
-    align-items: first baseline;
 }
-
+.holder{
+    position: relative;
+    display: flex;
+}
 .headElementone{
     font-size: 60px;
     color: white;
-    margin-left: 16rem;
+    display: flex;
+    justify-content: center;
 }
 
 .headElementTwo{
     font-size: 50px;
     color: white;
-    margin-left: 24rem;
+    display: flex;
+    justify-content: center;
 }
 
 .todoSection{
@@ -615,13 +655,19 @@ body{
 
 .boxeses{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    position: absolute;
+    inset: 0;
+    right: 4%;
 }
 .boxOnE{
     width: 260px;
     height: 380px;
     background-color: white;
-    margin-left: 8rem;
     padding: 2rem;
+    position: relative;
 }
 
 .price{
@@ -683,12 +729,13 @@ span{
     padding-top: 8px;
     padding-bottom: 8px;
     width: 200px;
-    margin-top: 45%;
     color: white;
     background-color: rgb(20, 185, 185);
     border: none;
     border-radius: 3px;
     transition: all ease .6s;
+    position: absolute;
+    bottom: 6%;
 }
 .gobtn:hover{
     background-color: rgb(28, 216, 216);
@@ -700,8 +747,9 @@ span{
     width: 260px;
     height: 380px;
     background-color: white;
-    margin-left: 1rem;
     padding: 2rem;
+    margin-left: 1rem;
+    position: relative;
 }
 
 .price{
@@ -747,12 +795,13 @@ span{
     padding-top: 8px;
     padding-bottom: 8px;
     width: 200px;
-    margin-top: 45%;
     color: white;
     background-color: rgb(152, 79, 197);
     border: none;
     border-radius: 3px;
     transition: all ease .6s;
+    position: absolute;
+    bottom: 0;
 }
 .gobtnt:hover{
     background-color: rgb(194, 125, 237);
@@ -764,6 +813,7 @@ span{
     background-color: white;
     margin-left: 1rem;
     padding: 2rem;
+    position: relative;
 }
 
 .price{
@@ -815,6 +865,8 @@ span{
     border: none;
     border-radius: 3px;
     transition: all ease .6s;
+    position: absolute;
+    bottom: 6%;
 }
 .gobtnt:hover{
     background-color: rgb(194, 125, 237);
@@ -825,16 +877,20 @@ span{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 
 
-
-.parTOne{
-  align-items: center;
-  width: 50%;
+.sectionOne{
+    width: 50%;
+    padding-right: 5%;
+    flex-grow: 2;
+    flex-basis: 300;
 }
 
-.commentOne, img{
+
+.commentOne, .profile{
     border-radius: 100%;
     width: 50px;
     margin: auto;
@@ -846,7 +902,9 @@ blockquote{
 }
 
 .social, .sight{
-    font-size: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .atag{
@@ -855,6 +913,332 @@ blockquote{
 }
 
 
-.parTwo{
+.sectionTwo{
     width: 50%;
+    padding-right: 5%;
+    flex-grow: 1;
+    flex-basis: 200;
 }
+
+.choosE{
+    padding: 2rem 2rem 0 2rem;
+    height: 100vh;
+}
+
+.space{
+    width: 100%;
+    height: 95px;
+    background-color: white;
+}
+
+.boxsies{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+}
+.boXone{
+    width: 280px;
+    height: 250px;
+    background-color: #4fd1c5;
+    color: white;
+    margin-right: 2rem;
+    padding: 12px 12px 0 12px;
+    position: relative;
+}
+.icon-one{
+    width: 35px;
+}
+
+.icon-two{
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+}
+.icon-img{
+    width: 25px;
+    position: absolute;
+    bottom: 4%;
+}
+
+.boXtwO{
+    width: 280px;
+    height: 250px;
+    background-color: #b794f4;
+    color: white;
+    margin-right: 2rem;
+    padding: 12px 12px 0 12px;
+    position: relative;
+}
+
+.boXthrEE{
+    width: 280px;
+    height: 250px;
+    background-color: #7f9cf5;
+    color: white;
+    margin-right: 2rem;
+    padding: 12px 12px 0 12px;
+    position: relative;
+}
+
+.boXFoUr{
+    width: 280px;
+    height: 250px;
+    background-color: #f687b3;
+    color: white;
+    margin-right: 2rem;
+    padding: 12px 12px 0 12px;
+    position: relative;
+}
+
+.inputType{
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    width: 98%;
+    height: 250px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.input-head{
+    color: white;
+    font-size: 2.7rem;
+}
+
+.inpuEl-dark{
+    padding: 12px;
+    font-size: large;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: solid gray;
+    border-radius: 4px;
+}
+.btnlas{
+    padding: 12px;
+    background-color: rgb(20, 185, 185);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px  30px;
+    transition: all 0.5s ease;
+    font-size: large;
+}
+.footer{
+    display: flex;
+}
+
+.footer-links{
+    display: flex;
+    width: 100%;
+    height: 35vh;
+    justify-content: space-evenly;
+}
+
+.HfivE{
+    font-size: 18px;
+    color: rgb(58, 58, 58);
+    margin-bottom: 9px;
+}
+
+.links-a{
+    color: rgb(130, 128, 128);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+    transition: all 1s ease;
+}
+
+.links-a:hover{
+    text-decoration: underline;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.media{
+    width: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 2px;
+}
+.meadia{
+    background: #4fd1c5;
+    border-radius: 35%;
+    width: 36px;
+    margin-left: 2px;
+    transition: all .6s ease;
+}
+
+.meadia:hover{
+    background-color: rgb(170, 255, 227);
+}
+
+ /* mobile */
+@media (max-width: 580px) {
+    .container{
+        margin-left: 0;
+    }
+    .prt1 {
+        margin-left: 10px; /* Further reduce margins for smaller screens */
+        margin-top: 0;
+    }
+
+    .logoContainer {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+
+    .links {
+        font-size: 0.9rem; /* Smaller font for very small screens */
+        margin-right: 6px;
+    }
+
+    .header {
+        flex-direction: column; /* Stack header items for small screens */
+        align-items: center;
+    }
+
+    .partTwo {
+        height: auto; /* Make partTwo fully responsive on very small screens */
+    }
+
+    .hero-main{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .headHO{
+        font-size: 60px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .inputSection{
+        flex-direction: column;
+    }
+    .inpuEl{
+        padding-left: 100px;
+        margin-bottom: 12px;
+    }
+    .btnt{
+        margin-left: 45px;
+        width: 73%;
+    }
+    .partTwo, .main-img{
+        width: 95%;
+        height: 100vh;
+    }
+    .boxS{
+        display: grid;
+        grid-row: 2fr;
+        width: 100%;
+        height: 130vh;
+    }
+    .boxOne{
+        margin-left: 45px;
+    }
+    .subpara{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .buttonsVedi0{
+        flex-direction: column;
+        width: 100%;
+    }
+    .butns-part1{
+        display: flex;
+        justify-content: space-evenly;
+        height: fit-content;
+    }
+    .butns-part2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .butns-part3{
+        display: flex;
+        justify-content: center;
+    }
+    .videos{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .profileDIve{
+        flex-direction: column;
+    }
+    .handpDiv{
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 50px;
+    }
+    .commentSection{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sectionOne{
+        width: 100%;
+    }
+    .sectionTwo{
+        width: 100%;
+    }
+    .boxsies{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .boXone, .boXtwO, .boXthrEE, .boXFoUr {
+        width: 85%;
+        margin: 20px auto;
+    }
+    .inputType{
+        flex-direction: column;
+        height: 90vh;
+        width: 100%;
+    }
+    .head-input{
+        width: 100%;
+    }
+    .input-head{
+        font-size: 30px;
+    }
+    .inputSection{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .inpuEl-dark{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .btnlas{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .footer-links{
+        height: 70vh;
+    }
+    .logoContainer{
+        margin-bottom: 12px;
+        width: 30px;
+        height: 30px;
+    }
+}
+    
+
