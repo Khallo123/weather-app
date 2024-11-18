@@ -2,24 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <div id="weather-container">
-        <h2>Weather App</h2>
-        <input type="text" id="city" placeholder="Enter City">
-        <button onclick="getWeather()">Search</button>
+    <form class="weatherForm">
+        <input type="text" class="cityInput" placeholder="Enter City">
+        <button type="submit">Get Weather</button>
+    </form>
 
-        <img src="" alt="Weather Icon" id="weather-icon">
-
-        <div id="temp-div"></div>
-
-        <div id="weather-info"></div>
-
-        <div id="hourly-forecast"></div>
-        <script src="./app.js" defer></script>
+    <div class="card" style="display: none;">
     </div>
 </body>
 </html>
